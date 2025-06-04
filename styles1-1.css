@@ -1,0 +1,452 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Very dark gray background */
+    color: #e0e0e0; /* Light gray text for contrast */
+    line-height: 1.7;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Styles */
+header {
+    background-color: #0d0d0d; /* Even darker for header */
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffd700; /* Gold for main title */
+}
+
+header h2 {
+    font-size: 1.4rem;
+    color: #b0b0b0; /* Lighter gray for subtitle */
+    margin-top: 0.5rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px; /* Space between nav items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500; /* Medium font weight */
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700; /* Gold background on hover */
+    color: #1a1a1a; /* Dark text on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px;
+    max-width: 1300px;
+    margin: 30px auto;
+    background-color: #2a2a2a; /* Slightly lighter dark gray for main content */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Prominent shadow */
+}
+
+main h2, main h3, main h4 {
+    color: #e6e6e6; /* White-ish headings */
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700; /* Bold headings */
+    text-transform: uppercase;
+}
+
+main p {
+    text-align: justify;
+    margin-bottom: 1rem;
+    color: #c0c0c0; /* Slightly darker text for paragraphs */
+}
+
+/* Image Styles */
+figure {
+    text-align: center;
+    margin: 30px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* Zoom effect on hover */
+}
+
+figure img:hover {
+    transform: scale(1.02);
+}
+
+figcaption {
+    font-style: italic;
+    color: #999;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+/* List Styles */
+ul, ol {
+    list-style-position: inside; /* Keep bullets/numbers inside content flow */
+    margin-left: 0;
+    padding-left: 20px;
+    color: #e0e0e0;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+ul li::marker { /* Style bullets */
+    color: #ffd700; /* Gold bullets */
+}
+
+ol li::marker { /* Style numbers */
+    color: #ffd700; /* Gold numbers */
+    font-weight: bold;
+}
+
+/* Semantic Text Styles */
+mark {
+    background-color: rgba(255, 215, 0, 0.3); /* Translucent gold highlight */
+    color: #fff;
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+    color: #ffd700; /* Gold for emphasis */
+}
+
+strong {
+    font-weight: bold;
+    color: #ff4500; /* Deep red for strong text */
+}
+
+blockquote {
+    border-left: 6px solid #ff4500; /* Deep red border */
+    padding-left: 20px;
+    margin: 25px 0;
+    color: #c0c0c0;
+    font-style: italic;
+    background-color: #333; /* Darker background for blockquote */
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+q {
+    font-style: italic;
+    color: #ffd700; /* Gold for short quotes */
+}
+
+small {
+    font-size: 0.85em;
+    color: #888;
+}
+
+a {
+    color: #ffd700; /* Gold for all links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4500; /* Deep red on link hover */
+    text-decoration: underline;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: #3a3a3a; /* Dark background for table */
+    border-radius: 8px;
+    overflow: hidden; /* For rounded corners to apply to content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+table, th, td {
+    border: 1px solid #4a4a4a; /* Slightly lighter border for table */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    color: #e0e0e0;
+}
+
+th {
+    background-color: #1a1a1a; /* Even darker for table headers */
+    color: #ffd700; /* Gold for table headers */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+}
+
+/* Form Styles */
+form {
+    background-color: #333; /* Darker background for form */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 25px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="datetime-local"],
+form input[type="week"],
+form input[type="month"],
+form input[type="time"],
+form input[type="number"],
+form input[type="url"],
+form input[type="search"],
+form textarea,
+form select {
+    width: calc(100% - 24px); /* Adjust for padding and border */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #555; /* Darker border */
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #444; /* Darker input background */
+    color: #fff; /* White text in inputs */
+    font-size: 1rem;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #999; /* Placeholder text color */
+}
+
+form input[type="range"] {
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-appearance: none; /* Remove default styling for better customization */
+    height: 8px; /* Height of the track */
+    background: #555; /* Track background */
+    border-radius: 5px;
+    outline: none;
+}
+
+form input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Size of the thumb */
+    height: 20px;
+    background: #ffd700; /* Gold thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: -6px; /* Center thumb vertically on track */
+}
+
+form input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ffd700;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+form input[type="color"] {
+    height: 45px;
+    padding: 5px;
+    border: 1px solid #555;
+    background-color: #444;
+}
+
+form input[type="submit"] {
+    background-color: #ffd700; /* Gold submit button */
+    color: #1a1a1a;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff4500; /* Deep red on hover */
+    color: #fff;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Details and Summary Styles */
+details {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 0;
+    color: #ffd700; /* Gold for summary text */
+    font-size: 1.1rem;
+    outline: none; /* Remove dotted outline on focus */
+}
+
+details p {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #ff4500; /* Red line for details content */
+}
+
+/* Meter and Progress Styles */
+meter, progress {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: #444; /* Darker track */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #ffd700; /* Gold progress fill */
+    border-radius: 5px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #ffd700; /* Gold progress fill for Firefox */
+    border-radius: 5px;
+}
+
+meter::-webkit-meter-bar {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+meter::-webkit-meter-optimum-value {
+    background-color: #008000; /* Green for optimum */
+    border-radius: 5px;
+}
+
+meter::-webkit-meter-suboptimum-value {
+    background-color: #ffd700; /* Gold for sub-optimum */
+    border-radius: 5px;
+}
+
+meter::-webkit-meter-even-less-good-value {
+    background-color: #ff4500; /* Red for low values */
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #0d0d0d;
+    color: #b0b0b0;
+    margin-top: 30px;
+    font-size: 0.95em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Specific Catalog Styles */
+#catalogo-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    form label, form input, form textarea, form select {
+        font-size: 0.95rem;
+    }
+
+    form input[type="submit"] {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
